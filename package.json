@@ -27,7 +27,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "swc src -d dist",
     "build:ci": "yarn build && yarn types",
     "format": "prettier 'src/**/*.[jt]s?(x)' --write",
     "lint": "eslint src --ext js,ts",
@@ -70,6 +70,7 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.174",
     "@swc/jest": "^0.2.20",
     "@types/jest": "^27.4.1",

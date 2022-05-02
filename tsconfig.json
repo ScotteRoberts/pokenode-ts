@@ -1,22 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "baseUrl": ".",
+    "target": "ESNext",
+    "lib": ["ESNext"],
     "allowJs": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": false,
     "esModuleInterop": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "typeRoots": ["./node_modules/@types"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "importHelpers": true,
-    "rootDir": "./src",
-    "outDir": "./dist"
+    "importHelpers": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
